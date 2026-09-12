@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Cumple Andrea ❤️</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s;
+  }
+  @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+  h1 { font-size: 3rem; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); margin: 20px 0; }
+  .hearts { font-size: 2.5rem; animation: beat 1s infinite; }
+  @keyframes beat { 0%,100%{transform:scale(1);} 50%{transform:scale(1.3);} }
+  
+  /* IMAGEN CENTRAL */
+  .imagen-central {
+    max-width: 500px;
+    margin: 30px auto;
+    animation: aparecer 1.5s ease-in-out;
+  }
+  .imagen-central img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+  }
+  @keyframes aparecer { from {opacity: 0; transform: scale(0.8);} to {opacity: 1; transform: scale(1);} }
+
+  /* GALERIA ARREGLADA */
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+  .photos img {
+    width: 100%; 
+    height: 250px; /* TODAS MISMO ALTO */
+    object-fit: cover; /* recorta bonito sin deformar */
+    border-radius: 20px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+  }
+  .photos img:hover { transform: scale(1.05) rotate(1deg); }
+  
+  .love-letter {
+    background: rgba(255,255,255,0.95);
+    padding: 40px;
+    border-radius: 25px;
+    max-width: 650px;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+  audio { margin-top: 20px; }
+</style>
+</head>
+<body>
+  <div class="hearts">❤️</div>
+  <h1>¡Con mucho cariño!</h1>
+
+  <!-- IMAGEN NUEVA AL CENTRO -->
+  <div class="imagen-central">
+    <img src="torta-andreita.jpg" alt="Feliz Cumple Andreita">
+  </div>
+  
+  <!-- MÚSICA -->
+  <audio autoplay loop controls>
+    <source src="CUMPLEAÑOS.mp3" type="audio/mpeg">
+  </audio>
+  
+  <div class="photos">
+    <!-- TUS FOTOS -->
+    <img src="imagen.jpg" alt="Nosotros">
+    <img src="imagen2.jpg" alt="Recuerdo">
+    <img src="imagen3.jpg" alt="Te quiero">
+    <img src="imagen4.jpg" alt="bonitos">
+    <img src="imagen5.jpg" alt="Memoria">
+    <img src="imagen6.jpg" alt="Juntos">
+    <img src="imagen7.jpg" alt="Amor">
+    <img src="imagen8.jpg" alt="Feliz">
+  </div>
+
+  <div class="love-letter">
+    <p>Andrea,</p>
+    <br>
+    <p>¡Feliz cumpleaños! Llegó el día más especial para ti 🎉</p>
+    <p>Hoy estás celebrando 20 añitos... ¿ya viste qué rápido pasa el tiempo? 😭</p>
+    <p>Ya llegaste a la segunda fase jeje. Ahora no podrás decirme que soy un viejito, 
+    porque ahora somos dos viejos juntos 🤭</p>
+    <br>
+    <p>Espero que te encante este regalito y que la estés pasando súper bien al lado 
+    de tu familia, que siempre te quiere, siempre te apoya y nunca te deja sola en lo que te propones.</p>
+    <p>Y también al lado de esas amistades que siempre te sacan una sonrisa.</p>
+    <br>
+    <p>Andreita, siempre te voy a desear lo mejor en cada momento de tu vida.</p>
+    <p>Gracias por existir, por hacerme reír y por dejarme quererte así de bonito.</p>
+    <p>Espero seguir en tu vida por muchos años más... creciendo, riendo y siendo esos 
+    dos viejitos juntos ❤️</p>
+    <br>
+    <p><strong>Te amo, te quiero con todo mi corazón.</strong></p>
+    <p><strong>Con cariño, Diegote</strong></p>
+</div>
+</body>
+</html>
